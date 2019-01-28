@@ -6,7 +6,16 @@ function CharacterCard(props) {
         <div>
             <div>
                <img alt={props.name} 
+               src={props.image}
+               onClick={() => props.shuffleCards(props.id)}
+               className="click-img"
+               />
             </div>
         </div>
-    )
+    );
 }
+
+
+
+
+export default CharacterCard;
