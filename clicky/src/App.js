@@ -4,6 +4,7 @@ import CharacterCard from "./components/CharacterCard";
 import Header from "./components/Header";
 import characters from "./characters.json";
 import Navbar from "./components/Navbar";
+import './App.css';
 
 
 
@@ -14,7 +15,7 @@ class App extends Component {
     clicked: [],
     currentScore: 0,
     topScore: 0,
-    message: "",
+    titleClass: "",
     headTitle: "Click an Image to Start!"
   
   };
@@ -59,17 +60,17 @@ class App extends Component {
 //       [data[i], data[j]] = [data[j], data[i]];
 //     }
 //     return data;
-  };
+  
 
   render() 
   {
     return (
       <Wrapper>
-        <Title
+        <Navbar
         currentScore={this.state.currentScore}
         topScore={this.state.topScore}
         headTitle={this.state.headTitle}
-        ></Title>
+        ></Navbar>
         <Header></Header>
         <Wrapper className = "container">
         {this.state.characters.map(character => (
@@ -87,6 +88,6 @@ class App extends Component {
       </Wrapper>
     )
   }
-
+};
 
 export default App;

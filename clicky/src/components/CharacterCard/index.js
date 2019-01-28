@@ -1,5 +1,5 @@
 import React from 'react';
-import "./CharacterCard.css";
+import "./index.css";
 
 function CharacterCard(props) {
     return (
@@ -8,7 +8,7 @@ function CharacterCard(props) {
                <img alt={props.name} 
                src={props.image}
                onClick={() => props.shuffleCards(props.id)}
-               className="click-img"
+               className="click-item"
                />
             </div>
         </div>
