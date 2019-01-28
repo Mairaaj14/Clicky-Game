@@ -7,9 +7,11 @@ function Navbar(props) {
         <ul>
             <li className="brand"><a href="/">Dragon Ball Z Memory Game</a></li>
             <li className={props.headTitle}></li>
-            <li> currentScore {props.currentScore} | Top Score {props.topScore}</li>
+            <li> Score {props.currentScore} | Top Score {props.topScore}</li>
 
         </ul>
         </nav>
     )
 }
+
+export default Navbar;
