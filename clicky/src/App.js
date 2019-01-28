@@ -19,7 +19,7 @@ class App extends Component {
     headTitle: "Click an Image to Start!"
   
   };
-// Set the cards to shuffle
+// Set the cards to shuffle on click
   shuffleCards = id => {
     const charactersRandom = arr => arr.sort(() => Math.random() - 0.5)
 

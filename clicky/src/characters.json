@@ -70,6 +70,16 @@
         "id": 14,
         "name": "Bulma",
         "image": "https://vignette.wikia.nocookie.net/dragonuniverse/images/c/cd/Bulma23rdTenkaichiBudokai.png/revision/latest?cb=20160205025729"
+    },
+    {
+        "id": 15,
+        "name": "Master",
+        "image": "https://vignette.wikia.nocookie.net/dragonuniverse/images/c/c0/MutenRoshiR0FF.png/revision/latest?cb=20160705163250"
+    },
+    {
+        "id": 16,
+        "name": "Super Saiyan",
+        "image": "https://vignette.wikia.nocookie.net/dragonuniverse/images/9/96/Super_Saiyan_Blue_Goku_%28Broly%29.jpeg/revision/latest?cb=20181126041421"
     }
   
 ]
