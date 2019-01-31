@@ -4,94 +4,48 @@
 Memory game created with React.
 
 ## Overview
-We use media tags because we dont want any of our content to get cut out when you make your window smaller.
-My portfolio is composed of three link pages in my Navbar:
-* [About]() - Main index page/ landing page
-* [Portfolio]() - Portfolio Page
-* [Contact]() - Contact Page
+Using React and Node.js we will create a memory clicky game. Inspired by Dragon Ball Z, I decided to create my memory game based on my favorite characters! As the game starts, user is told to click on any image, as the user clicks on a character the cards randomly shuffle. User is not allowed to click on the same character card more than ONCE! If user clicks on the same character twice it's a loss and score will go back to 0! Game records users top score and restarts current score once they lose!
 
-
-Below is a following example of what my basic portfolio looks like with the different `@media screen tags` 
-As you can see none of my content gets cut off even if I make the window smaller.
-
-![alt text](assets/images/responsive.gif)
+![alt text]()
 
 ### Getting Started
-You will need to create your HTML files, and in a separate folder create an `assets` folder where you will have two folders
-`css and images` in your css folder that's where you want your CSS stylesheet `style.css`.
-Your css file will be in charge of the front-end, you control and decide the styling of every part of your portfolio.
-To make our portfolio responsive, the @media screen tags must be added in your CSS file.
+You can find my deployed game [here](https://mairaaj14.github.io/Clicky-Game/)
 
-Here is a code snippet of how my media screen tags and my styling looks like:
+You will need to create a react-app and do a `yarn install` to begin building your game.
+Node is required as a pre-requesite in order for your game to work.
+
+Here is a code snippet of how my file structure looks:
 
 ``` 
- @media screen and (max-width: 980px) {
-    .container {
-      width: 100%;
-      max-width: 960px;
-      margin: 0 auto;
-      clear: both;
-    }
-    #masthead {
-      position: fixed;
-      z-index: 99;
-      width: 100%;
-      max-width: 960px;
-      margin: 0 0 30px;
-      overflow: auto;
-      color: #ffffff;
-      background: #ffffff;
-      border-bottom: 2px solid #cccccc;
-    }
-  }
-
-  @media screen and (max-width: 768px) {
-    .container {
-      width: 100%;
-      max-width: 768px;
-      margin: 0 auto;
-      clear: both;
-    }
-    #masthead {
-      position: fixed;
-      z-index: 99;
-      width: 100%;
-      max-width: 768px;
-      margin: 0 0 30px;
-      overflow: auto;
-      color: #ffffff;
-      background: #ffffff;
-      border-bottom: 2px solid #cccccc;
-    }
-  }
-
-  @media screen and (max-width: 640px) {
-    .container {
-      width: 100%;
-      max-width: 640px;
-      margin: 0 auto;
-      clear: both;
-    }
-    #masthead {
-      position: static;
-      z-index: 99;
-      width: 100%;
-      max-width: 640px;
-      margin: 0 0 30px;
-      overflow: auto;
-      color: #ffffff;
-      background: #ffffff;
-      border-bottom: 2px solid #cccccc;
-    }
-  }
-
+public	
+- favicon.ico	
+  index.html	
+  manifest.json
+src	
+- components	
+    -CharacterCard.js
+     Header.js	
+     Navbar.js	
+     Wrapper.js
+  App.css	
+  App.js	
+  App.test.js	
+  characters.json	
+  index.css	
+  index.js	
+  logo.svg	
+  serviceWorker.js
+.gitignore	
+package.json	
+yarn.lock
 ```
 
 ### Built With
-* HTML
-* CSS
-* Node JS
-* 
+* HTML5
+* CSS3
+* Node JS - JavaScript runtime
+* React JS - Front-end Javascript library
+* Bootstrap
 * [VSC](https) - Visual Studio Code, Editor
 * [Github Pages](https) - Deployment
 
